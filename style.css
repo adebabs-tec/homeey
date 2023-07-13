@@ -134,15 +134,47 @@ ul li a:hover::after {
     background-position: center;
     background-size: cover;
     height: 718px;
-    width: auto;
     position: relative;
-}
-
-.hero-main {
-    width: 50%;
+    padding: 6rem 4rem;
 }
 
 .hero .hero-content {
-    display: flex;
-    flex-wrap: wrap;
+    width: 50%;
+}
+
+.hero-heading {
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.4rem;
+    margin: 2rem 0;
+    width: 184px;
+}
+
+.hero-heading>span {
+    color: #0b1e3b;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hero-text {
+    display: block;
+    margin: 2rem auto;
+}
+
+.hero-text .text1 {
+    color: #2a323c;
+    text-shadow: 2px 3px 4px 0px rgba(10, 25, 48, 0.28);
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.hero-text .text2 {
+    color: #1252ae;
+    text-shadow: 2px 3px 4px 0px rgba(10, 25, 48, 0.28);
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 80px;
 }
