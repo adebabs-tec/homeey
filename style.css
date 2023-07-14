@@ -178,3 +178,50 @@ ul li a:hover::after {
     font-weight: 700;
     line-height: 80px;
 }
+
+.hero-content .hero-sub {
+    width: 400px;
+    color: #2a323c;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+.Btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.Btn .btn1,
+.btn2,
+.btn3 {
+    border: none;
+    outline: none;
+    border-radius: 4px 4px 0px 0px;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.Btn a {
+    text-decoration: none;
+}
+
+.Btn .btn1 {
+    background-color: #1252ae;
+}
+
+.Btn .btn1 a {
+    color: #fff;
+}
+
+.Btn .btn2,
+.btn3 {
+    background-color: #fff;
+}
+
+.Btn .btn2 a,
+.btn3 a {
+    color: #1252ae;
+}
