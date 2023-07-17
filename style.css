@@ -190,8 +190,8 @@ ul li a:hover::after {
 .Btn {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 1rem;
+    margin: 2rem 0 0 2rem;
 }
 
 .Btn .btn1,
@@ -224,4 +224,120 @@ ul li a:hover::after {
 .Btn .btn2 a,
 .btn3 a {
     color: #1252ae;
+}
+
+.Btn .btn2:hover,
+.btn3:hover {
+    background-color: #1252ae;
+    transition: all 0.2s;
+}
+
+.Btn .btn2:hover a,
+.btn3:hover a {
+    color: #fff;
+}
+
+.searchDiv {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 675px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchDiv .search-cont {
+    display: flex;
+    gap: 10px;
+    width: 160px;
+    border-radius: 4px;
+    background: #fff;
+    padding: 15px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchDiv .search-cont .cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.search-cont img {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.searchDiv .search-cont p {
+    color: #7a818c;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.searchDiv .search {
+    display: flex;
+    align-items: center;
+    width: 112px;
+    border-radius: 4px;
+    background: #1252ae;
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    padding: 15px 20px;
+    cursor: pointer;
+    gap: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.searchDiv .search a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.searchDiv .search img {
+    width: 14px;
+    height: 14px;
+}
+
+.searchDiv .search a:hover {
+    font-weight: 500;
+}
+
+
+/* property section */
+
+.property {
+    margin: 4rem auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 2rem; */
+}
+
+.container .card {
+    text-align: center;
+}
+
+.container .card .card-img {
+    width: 67px;
+    height: 67px;
+}
+
+.container .card a {
+    text-decoration: none;
+    color: #2a323c;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
 }
