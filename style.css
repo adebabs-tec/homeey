@@ -136,6 +136,8 @@ ul li a:hover::after {
     height: 718px;
     position: relative;
     padding: 6rem 4rem;
+    margin: 0 8rem;
+    border-radius: 10px;
 }
 
 .hero .hero-content {
@@ -315,14 +317,56 @@ ul li a:hover::after {
 /* property section */
 
 .property {
-    margin: 4rem auto;
+    margin: 4rem 8rem;
+}
+
+.heading {
+    display: block;
+}
+
+.heading .heading-text {
+    display: flex;
+}
+
+.heading .heading-text h1 {
+    display: flex;
+    text-align: start;
+    padding-bottom: 1rem;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.heading .heading-text h1:first-child {
+    color: #1252ae;
+    border-bottom: 2px solid #2a323c;
+}
+
+.heading .heading-text h1:last-child {
+    color: #2a323c;
+    padding-left: 10px;
+}
+
+.broken-underline {
+    display: flex;
+    width: 250px;
+    gap: 20px;
+}
+
+.broken-underline span:first-child {
+    width: 50%;
+    border-bottom: 2px solid #1252ae;
+}
+
+.broken-underline span:last-child {
+    width: 20%;
+    border-bottom: 2px solid #2a323c;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* gap: 2rem; */
+    text-align: center;
 }
 
 .container .card {
@@ -330,6 +374,17 @@ ul li a:hover::after {
 }
 
 .container .card .card-img {
+    width: 100px;
+    height: 100px;
+    fill: linear-gradient( 141deg, rgba(18, 82, 174, 0.3) 0%, rgba(18, 82, 174, 0) 100%);
+    box-shadow: 0px 6px 7px 0px rgba(18, 82, 174, 0.2) inset;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container .card .card-img img {
+    position: absolute;
     width: 67px;
     height: 67px;
 }
@@ -340,4 +395,20 @@ ul li a:hover::after {
     text-align: center;
     font-size: 22px;
     font-weight: 600;
+}
+
+.container .card .listing {
+    border-radius: 50px;
+    background: #ebeef2;
+    box-shadow: 0px 2px 1px 0px rgba(36, 45, 60, 0.2);
+    padding: 5px;
+    width: 104px;
+    margin: 0.5rem auto;
+}
+
+.container .card .listing span {
+    color: #2a323c;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
 }
