@@ -431,6 +431,12 @@ ul li a:hover::after {
     padding: 4rem 8rem;
 }
 
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .container #card {
     width: 312px;
     height: 396px;
@@ -470,6 +476,7 @@ ul li a:hover::after {
     width: 28px;
     height: 28px;
     text-align: center;
+    cursor: pointer;
 }
 
 .bgimg .loveEmg img {
@@ -524,7 +531,7 @@ ul li a:hover::after {
 
 hr {
     width: 80%;
-    margin: 8px auto;
+    margin: 10px auto;
 }
 
 hr.line {
@@ -536,8 +543,9 @@ hr.line {
 .card .card_footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 2rem;
 }
 
 .card .card_footer .foot_cont {
@@ -545,4 +553,38 @@ hr.line {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: #1252ae;
+    font-style: normal;
+    line-height: normal;
+}
+
+.card .card_footer .foot_cont h1 {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.card .card_footer .foot_cont span {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 5px 0 0 2px;
+}
+
+.button {
+    display: flex;
+    border-radius: 4px;
+    background: #ebeef2;
+    width: 102px;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button span {
+    color: #2a323c;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
