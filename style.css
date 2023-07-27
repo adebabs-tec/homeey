@@ -488,9 +488,10 @@ ul li a:hover::after {
 .card_content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     text-align: center;
+    margin-left: 2rem;
 }
 
 .card_content h1 {
@@ -498,6 +499,7 @@ ul li a:hover::after {
     font-size: 17px;
     font-weight: 600;
     padding: 10px;
+    text-align: center;
 }
 
 .card_content .cont1,
@@ -505,7 +507,6 @@ ul li a:hover::after {
 .cont3 {
     display: flex;
     align-items: center;
-    text-align: center;
     gap: 8px;
     margin-bottom: 10px;
 }
@@ -586,5 +587,74 @@ hr.line {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
+    line-height: normal;
+}
+
+div.viewBtn {
+    border-radius: 4px;
+    background: #1252ae;
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    width: 141px;
+    height: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.viewBtn span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* About us section starts here  */
+
+.aboutUs {
+    margin: 4rem 8rem;
+}
+
+.card1 .imgDiv {
+    width: 536px;
+    height: 585px;
+    border-radius: 6px;
+    border: 1px solid rgba(18, 82, 174, 0.2);
+}
+
+.card1 .imgDiv img {
+    border-radius: 6px;
+    margin-top: 2rem;
+    margin-left: -4rem;
+    box-shadow: 2px #737d8c;
+}
+
+.card1 .bottom-img {
+    margin-top: -4rem;
+    margin-left: -36em;
+}
+
+.card1 .bottom-img img {
+    width: 187px;
+    height: 187px;
+}
+
+.card2 {
+    margin: 0 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: start;
+}
+
+.card2 .head-text h1 {
+    color: #2a323c;
+    font-family: Open Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
     line-height: normal;
 }
