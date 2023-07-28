@@ -583,7 +583,6 @@ hr.line {
 
 .button span {
     color: #2a323c;
-    font-family: Open Sans;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -617,18 +616,27 @@ div.viewBtn span {
     margin: 4rem 8rem;
 }
 
-.card1 .imgDiv {
+.aboutUs .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 3rem;
+}
+
+.card1 .imgDiv,
+.card4 .imgDiv {
     width: 536px;
     height: 585px;
+    border-radius: 6px;
     border-radius: 6px;
     border: 1px solid rgba(18, 82, 174, 0.2);
 }
 
-.card1 .imgDiv img {
+.card1 .imgDiv img,
+.card4 .imgDiv img {
     border-radius: 6px;
     margin-top: 2rem;
     margin-left: -4rem;
-    box-shadow: 2px #737d8c;
+    box-shadow: 0 28px 20px -26px #d9d9d9;
 }
 
 .card1 .bottom-img {
@@ -642,19 +650,658 @@ div.viewBtn span {
 }
 
 .card2 {
-    margin: 0 6rem;
+    margin: 0 6rem 4rem 4rem;
+    padding: 0 2rem;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    /* align-items: center; */
     text-align: start;
 }
 
-.card2 .head-text h1 {
+.card2 .head-text {
+    width: 588px;
+}
+
+.card2 .head-text h1,
+.card3 .head-text h1 {
     color: #2a323c;
-    font-family: Open Sans;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
+    line-height: normal;
+}
+
+.card2 .head-text h1 span,
+.card3 .head-text h1 span {
+    color: #1252ae;
+}
+
+.card2 .remain-cont {
+    color: #737d8c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 0.5rem;
+}
+
+.card2 .remain-cont>p {
+    padding: 0.8rem 0;
+}
+
+.card2 .cont-1,
+.cont-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.card2 .cont-1 {
+    display: flex;
+    width: 536px;
+    height: 144px;
+    border-radius: 4px;
+    border: 1px solid #d4dce5;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.cont-2-1,
+.cont-1-1 {
+    display: flex;
+    gap: 15px;
+}
+
+.card2 .cont-1 .icn {
+    width: 24px;
+    height: 24px;
+}
+
+.card2 .cont-1 .message h1 {
+    color: #323b45;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 15px;
+}
+
+.card2 .cont-1 .message p {
+    color: #737d8c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 388px;
+}
+
+.card2 .cont-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.6rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #d4dce5;
+    width: 536px;
+    height: 80px;
+}
+
+.card3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+    align-items: center;
+    text-align: start;
+}
+
+.card3 .head-text {
+    width: 500px;
+}
+
+.card3 .card3-text {
+    display: block;
+    color: #737d8c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1rem 0;
+}
+
+.card3 .card3-text>p {
+    padding-bottom: 1rem;
+    width: 624px;
+}
+
+.card3 .card3-text p:last-child {
+    width: 603px;
+}
+
+.card3 .conts {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.card3 .conts .conts-1 {
+    display: flex;
+    gap: 15px;
+}
+
+.card3 .view-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #1252ae;
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.25);
+    width: 119px;
+    height: 38px;
+    color: #fff;
+    margin: 4rem 0;
+}
+
+.card4 {
+    margin-left: 16rem;
+}
+
+.card4 .bottom-img {
+    margin-top: -4rem;
+    margin-left: -38rem;
+}
+
+.card4 .bottom-img img {
+    width: 187px;
+    height: 187px;
+}
+
+.achievements {
+    margin: 4rem 0;
+    background: #f4f6f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 357px;
+    gap: 20px;
+}
+
+.achievements .card {
+    width: 312px;
+    height: 197px;
+    border-radius: 4px;
+    background: #fff;
+    padding: 1rem;
+}
+
+.achievements .card img {
+    width: 60px;
+    height: 60px;
+}
+
+.achievements .card h1 {
+    color: #2a323c;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.achievements .card hr {
+    width: 32px;
+    height: 2px;
+    background: rgba(42, 50, 60, 0.25);
+}
+
+.achievements .card p {
+    color: #737d8c;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.achievements .card .svg {
+    margin-top: -6rem;
+    margin-right: -12rem;
+    width: 97.5px;
+    height: 86.667px;
+}
+
+
+/* review styles starts here  */
+
+.review {
+    padding: 4rem 8rem;
+}
+
+.review .new-heading {
+    display: block;
+}
+
+.new-heading .heading-text {
+    display: flex;
+}
+
+.new-heading .heading-text h1 {
+    display: flex;
+    text-align: start;
+    padding-bottom: 1rem;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.new-heading .heading-text h1:first-child {
+    color: #2a323c;
+}
+
+.new-heading .heading-text h1:last-child {
+    color: #1252ae;
+    padding-left: 10px;
+}
+
+.broken-underline {
+    display: flex;
+    width: 280px;
+    gap: 20px;
+}
+
+.broken-underline span:first-child {
+    width: 55%;
+    border-bottom: 2px solid #2a323c;
+}
+
+.broken-underline span:nth-child(2) {
+    width: 20%;
+    border-bottom: 2px solid rgba(18, 82, 174, 0.5);
+}
+
+.broken-underline span:last-child {
+    width: 10%;
+    border-bottom: 2px solid rgba(18, 82, 174, 0.25);
+}
+
+.review .clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 6rem 0;
+}
+
+.review .clients .client {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(36, 45, 60, 0.2);
+    width: 424px;
+    height: 292px;
+    padding: 2rem;
+}
+
+.review .clients .client .topDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review .clients .client .client-img img {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    margin-top: -6rem;
+}
+
+.review .clients .client .topDiv .qutIcn {
+    margin-top: -2rem;
+    margin-right: -2rem;
+}
+
+.review .clients .client .texxt {
+    color: #737d8c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #dde0e5;
+    margin-bottom: 2rem;
+}
+
+.client-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-details h1 {
+    color: #2a323c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.client-details p {
+    color: #737d8c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* blog section starts here  */
+
+#Blog {
+    background: #f4f6f8;
+    padding: 4rem 8rem;
+}
+
+.featuredProperties .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 4rem 0;
+}
+
+.features .feature {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(36, 45, 60, 0.2);
+    width: 424px;
+    height: 375px;
+    padding: 1rem;
+}
+
+.features .feature img {
+    width: 385px;
+    height: 217px;
+}
+
+.feature .blog-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 10px 0 10px;
+}
+
+.feature .blog-head h1 {
+    color: #2a323c;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.feature .blog-head span {
+    text-align: center;
+    color: #4cb6aa;
+    border-radius: 3px;
+    background: rgba(76, 182, 170, 0.15);
+    box-shadow: 0px 2px 2px 0px rgba(19, 105, 95, 0.2);
+    width: 65px;
+    height: 28px;
+    padding: 2px;
+}
+
+.feature .local {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px 10px 10px;
+}
+
+.feature .local img {
+    width: 18px;
+    height: 18px;
+}
+
+.feature .local p {
+    color: #737d8c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blog-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.blog-foot .price {
+    color: #2a323c;
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+/* contact section starts here  */
+
+.contact {
+    margin: 4.8rem 8rem;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 30px;
+    background: rgba(18, 82, 174, 0.2);
+    width: 1320px;
+    height: 373px;
+    padding: 1rem;
+}
+
+.containers .cta-main h1 {
+    color: #1252ae;
+    text-shadow: 0px 3px 6px 0px rgba(8, 32, 68, 0.25);
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    width: 620px;
+    line-height: normal;
+    margin-bottom: 3rem;
+}
+
+.containers img {
+    margin-top: -5.5rem;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-wrapper input {
+    padding: 15px;
+    width: 588px;
+    height: 58px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(36, 45, 60, 0.2);
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: #adb5bd;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search-wrapper button {
+    position: absolute;
+    padding: 0 15px;
+    top: -9px;
+    right: 9px;
+    bottom: 0;
+    border-radius: 4px;
+    background: #1252ae;
+    box-shadow: 0px 3px 3px 0px rgba(9, 23, 44, 0.15);
+    width: 114px;
+    height: 38px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.search-wrapper button span {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* footer section now  */
+
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem 8rem;
+    margin-top: 6rem;
+    background: url('/images/footer-bg.png') lightgray 50% / cover no-repeat;
+}
+
+.container-fluid .social-us {
+    display: block;
+}
+
+.container-fluid .social-us p {
+    color: #737d8c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 312px;
+    padding: 15px 0;
+}
+
+.container-fluid .social-us h2 {
+    color: #2a323c;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.social-icns {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icns .icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background: rgba(42, 50, 60, 0.1);
+    padding: 5px;
+    margin: 1rem 0;
+}
+
+.footer-card {
+    display: block;
+}
+
+.footer-card h1 {
+    color: #2a323c;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.footer-card .howIt {
+    display: flex;
+    align-items: center;
+}
+
+.footer-card .howIt span {
+    color: #1252ae;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer-card p {
+    color: #737d8c;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 5px;
+}
+
+.footer-card .socia {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-card .socia .soc-img {
+    border-radius: 50px;
+    background: rgba(18, 82, 174, 0.12);
+    width: 36px;
+    height: 36px;
+    padding: 8.5px;
+}
+
+.footer-card .socia .soc-cont {
+    display: block;
+}
+
+.footer-card .socia .soc-cont h3 {
+    color: #2a323c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer-card .socia .soc-cont p {
+    color: #737d8c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer-card .socia .soc-cont p:last-child {
+    width: 210px;
+}
+
+.hr-line {
+    border-bottom: 1px solid #d9d9d9;
+    /* background: #d9d9d9; */
+    margin: 2rem;
+    width: 1320px;
+}
+
+.copywright {
+    display: flex;
+    align-items: center;
+}
+
+.copywright span {
+    color: #737d8c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
     line-height: normal;
 }
